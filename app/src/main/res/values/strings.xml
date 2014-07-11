@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SafeGuard</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="version">1.0</string>
+    <string name="main">SafeGuard</string>
+    <string name="login">Login</string>
+    <string name="inputPassword">Input Password</string>
+    <string name="protectedYes">Ok</string>
+    <string name="protectedNo">Cancel</string>
+    <string name="setPassword">Set Password</string>
+    <string name="setPasswordDescription">Please Input the Password</string>
+    <string name="againPassword">Input the Password Again</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
+    <string name="finish">finish</string>
+    <string name="guide1">1.Welcome to use anti-thief</string>
+    <string name="guide1_content">Phone\'s anti-thief</string>
+    <string name="guide1_item1">SIM card change warning</string>
+    <string name="guide1_item2">GPS location</string>
+    <string name="guide1_item3">Remote wipe data</string>
+    <string name="guide1_item4">Remote screenlock</string>
+    <string name="guide2">2.Binding SIM card</string>
+    <string name="guide2_content">Send a message when SIM card is changed</string>
+    <string name="guide2_item1">Binding</string>
+    <string name="guide2_item2">No Binding</string>
+    <string name="guide3">3.Set safe phone number</string>
+    <string name="guide3_content">The message will be sent to this number when SIM card is changed</string>
+    <string name="guide3_item1">Please input or select a phone number</string>
+    <string name="guide3_item2">Select from contact</string>
+    <string name="guide4">4.Congratulations, setting finished</string>
+    <string name="guide4_content">Your phone setting is finished</string>
+    <string name="guide4_item1">State: Safe guard out of service</string>
+    <string name="guide4_item2">State: On service</string>
+    <string name="selectContact">Choose the contact</string>
+    <string name="lostProtectedNumber">Safe phone number</string>
+    <string name="isProtected">State: On</string>
+    <string name="rePlayGuide">Resetting</string>
+    <string name="app_manager">App Manager</string>
+    <string name="app_manager_load">Loading...</string>
+    <string name="app_manager_delete">Uninstall</string>
+    <string name="app_manager_run">Run</string>
+    <string name="app_manager_share">Share</string>
+
+
+</resources>

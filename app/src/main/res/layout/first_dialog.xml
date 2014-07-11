@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:text="@string/setPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:background="@color/logbackground"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setPasswordDescription"
+            />
+
+        <EditText
+            android:id="@+id/et_protected_first_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/againPassword"
+            />
+
+        <EditText
+            android:id="@+id/et_protected_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_protected_first_yes"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="@string/protectedYes"
+                />
+
+            <Button
+                android:id="@+id/bt_protected_first_no"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/protectedNo"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
