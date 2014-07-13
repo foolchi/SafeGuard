@@ -44,10 +44,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                 if (position == 0){
                     // 防盗
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                    builder.setTitle("设置");
-                    builder.setMessage("设置别名");
+                    builder.setTitle(getString(R.string.action_settings));
+                    builder.setMessage(getString(R.string.set_alternateName));
                     final EditText et = new EditText(MainActivity.this);
-                    et.setHint("新名称");
+                    et.setHint(getString(R.string.new_name));
                     builder.setView(et);
                     builder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener(){
                         @Override
@@ -86,11 +86,13 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
     public void onItemClick(AdapterView<?> parent, View view, int position, long id){
         switch (position){
             case 0:
+                Intent intent0 = new Intent(this, LostProtectedActivity.class);
+                startActivity(intent0);
+                overridePendingTransition(R.anim.alpha_in, R.anim.alpha_out);
 
                 break;
             case 1:
                 Intent intent1 = new Intent(this, SmsBackupActivity.class);
-                //finish();
                 startActivity(intent1);
                 overridePendingTransition(R.anim.alpha_in, R.anim.alpha_out);
                 break;
@@ -110,8 +112,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
             case 7:
                 break;
             case 8:
-                Intent intent8 = new Intent(this, LostProtectedActivity.class);
-                finish();
+                Intent intent8 = new Intent(this, SettingsActivity.class);
                 startActivity(intent8);
                 overridePendingTransition(R.anim.alpha_in, R.anim.alpha_out);
                 break;

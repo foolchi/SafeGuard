@@ -12,6 +12,16 @@ public class AppInfo {
     private String packageName;
     private boolean isSystemApp;
 
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    public void setLocked(boolean isLocked) {
+        this.isLocked = isLocked;
+    }
+
+    private boolean isLocked;
+
     public Drawable getIcon() {
         return icon;
     }

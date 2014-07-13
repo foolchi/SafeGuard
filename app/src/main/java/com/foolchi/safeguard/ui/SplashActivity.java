@@ -136,7 +136,6 @@ public class SplashActivity extends Activity {
                 }
                 catch (Exception e){
                     e.printStackTrace();
-                    Toast.makeText(SplashActivity.this, "Cannot connect to the server", Toast.LENGTH_SHORT).show();
                 }
             }
         });

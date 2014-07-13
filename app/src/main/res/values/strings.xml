@@ -44,6 +44,14 @@
     <string name="app_manager_delete">Uninstall</string>
     <string name="app_manager_run">Run</string>
     <string name="app_manager_share">Share</string>
-
+    <string name="new_name">New title</string>
+    <string name="set_alternateName">Change title</string>
+    <string name="all_app">All App</string>
+    <string name="user_app">User App</string>
+    <string name="locked_app">Locked App</string>
+    <string name="app_lock">Lock</string>
+    <string name="app_unlock">Unlock</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="lock_service">Lock App Service</string>
 
 </resources>

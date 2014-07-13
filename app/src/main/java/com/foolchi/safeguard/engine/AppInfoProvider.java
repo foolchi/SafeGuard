@@ -8,6 +8,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import com.foolchi.safeguard.dao.AppLockDao;
 
 import com.foolchi.safeguard.domain.AppInfo;
 
@@ -17,9 +18,11 @@ import com.foolchi.safeguard.domain.AppInfo;
 public class AppInfoProvider {
 
     private PackageManager packageManager;
+    private AppLockDao appLockDao;
 
     public AppInfoProvider(Context context){
         packageManager = context.getPackageManager();
+        appLockDao = new AppLockDao(context);
     }
 
     public List<AppInfo> getAllApps(){
@@ -44,6 +47,9 @@ public class AppInfoProvider {
             else{
                 myAppInfo.setSystemApp(false);
             }
+
+            myAppInfo.setLocked(isLockedApp(packageName));
+
             list.add(myAppInfo);
         }
         return list;
@@ -54,6 +60,12 @@ public class AppInfoProvider {
         if ((appInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0)
             return true;
         if ((appInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0)
+            return true;
+        return false;
+    }
+
+    public boolean isLockedApp(String packageName){
+        if (appLockDao.find(packageName))
             return true;
         return false;
     }

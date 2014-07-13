@@ -49,14 +49,27 @@
         <activity android:name=".ui.SetupGuide3Activity" />
         <activity android:name=".ui.SetupGuide4Activity" />
         <activity android:name=".ui.SelectContactActivity" />
-        <activity android:name=".ui.SmsBackupActivity"/>
-        <activity android:name=".ui.AppManagerActivity"/>
+        <activity android:name=".ui.SmsBackupActivity" />
+        <activity android:name=".ui.AppManagerActivity" />
+        <activity android:name=".ui.LockActivity"/>
 
         <service
             android:name=".service.BackupSmsService"
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <service android:name=".service.WatchDogService"/>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+        <provider
+            android:authorities="com.foolchi.safeguard.applockprovider"
+            android:name="com.foolchi.safeguard.engine.AppLockProvider"
+            android:exported="false"/>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -70,7 +83,8 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_SMS"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
 
 </manifest>
