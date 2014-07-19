@@ -104,6 +104,9 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
             case 3:
                 break;
             case 4:
+                Intent intent4 = new Intent(this, ProcessManagerActivity.class);
+                startActivity(intent4);
+                overridePendingTransition(R.anim.alpha_in, R.anim.alpha_out);
                 break;
             case 5:
                 break;

@@ -53,5 +53,10 @@
     <string name="app_unlock">Unlock</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="lock_service">Lock App Service</string>
+    <string name="process_manager">Process Manager</string>
+    <string name="process_clear">Clear Process</string>
+    <string name="process_setting">Process Setting</string>
+    <string name="process_count">Process Count</string>
+    <string name="process_memory">Process Memory</string>
 
 </resources>

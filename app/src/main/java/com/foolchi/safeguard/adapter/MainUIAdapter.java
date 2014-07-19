@@ -15,8 +15,8 @@ import com.foolchi.safeguard.R;
  */
 public class MainUIAdapter extends BaseAdapter{
     private static final String[] NAMES = new String[]{
-            "Anti-thief", "SMS Backup", "App Manage",
-            "Mobile Data", "Task Manage", "Anti-Virus",
+            "Anti-thief", "SMS Backup", "App Manager",
+            "Mobile Data", "Task Manager", "Anti-Virus",
             "System Opt", "Advanced", "Setting"
     };
     private static final int[] ICONS = new int[]{

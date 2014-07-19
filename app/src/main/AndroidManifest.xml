@@ -53,6 +53,11 @@
         <activity android:name=".ui.AppManagerActivity" />
         <activity android:name=".ui.LockActivity"/>
 
+        <activity android:name=".ui.ProcessManagerActivity"
+            android:theme="@style/MyTitleBar"
+            android:label="@string/process_manager"
+            />
+
         <service
             android:name=".service.BackupSmsService"
             android:enabled="true"
